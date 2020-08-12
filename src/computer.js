@@ -39,3 +39,5 @@ class WeakIntelligence extends Computer {
         return false
     }
 }
+
+// todo MiddleIntelligence, HighIntelligence
