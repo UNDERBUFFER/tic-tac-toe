@@ -10,6 +10,7 @@ class Block {
     setValuesToElement(id, shiftRight=0, shiftUp=0) {
         this.block.className = 'block'
         this.block.id = id
+
         this.block.style.height = `${this.height}px`
         this.block.style.width = `${this.width}px`
         this.block.style.marginLeft = `${shiftRight}px`
