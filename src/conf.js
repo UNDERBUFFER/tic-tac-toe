@@ -11,4 +11,3 @@ const settings = {
     COMPUTER_VALUE: 'computer',
     COMPUTER_SYMBOL: 'url(images/tac.png)'
 }
-

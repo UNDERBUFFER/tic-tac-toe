@@ -28,17 +28,19 @@ class Map {
             const i = blockElement.id.split('').map(value => Number(value))[0]
             const j = blockElement.id.split('').map(value => Number(value))[1]
 
-            blockElement.style.backgroundImage = settings.USER_SYMBOL
-            blockElement.style.backgroundPosition = 'center'
+            if (this.innerFoundation[i][j] === null) {
+                blockElement.style.backgroundImage = settings.USER_SYMBOL
+                blockElement.style.backgroundPosition = 'center'
 
-            this.innerFoundation[i][j] = settings.USER_VALUE
-            let event = new CustomEvent("STROKE", {
-                detail: {
-                    gamer: settings.USER_VALUE
-                }
-            })
+                this.innerFoundation[i][j] = settings.USER_VALUE
+                let event = new CustomEvent("STROKE", {
+                    detail: {
+                        gamer: settings.USER_VALUE
+                    }
+                })
 
-            document.dispatchEvent(event)
+                document.dispatchEvent(event)
+            }
         }
     }
 }

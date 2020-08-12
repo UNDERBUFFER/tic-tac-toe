@@ -21,6 +21,18 @@ class WeakIntelligence extends Computer {
 
             if (this.innerFoundation[y][x] === null) {
                 this.innerFoundation[y][x] = settings.COMPUTER_VALUE
+                const blockElement = document.getElementById(`${y}${x}`)
+                blockElement.style.backgroundImage = settings.COMPUTER_SYMBOL
+                blockElement.style.backgroundPosition = 'center'
+
+                let event = new CustomEvent("STROKE", {
+                    detail: {
+                        gamer: settings.COMPUTER_VALUE
+                    }
+                })
+
+                document.dispatchEvent(event)
+
                 return true
             }
         }
