@@ -2,9 +2,9 @@
 'use strict';
 
 const settings = {
-    MAP_HEIGHT: 420,
-    MAP_WIDTH: 420,
-    BLOCK_HEIGHT: 140,
-    BLOCK_WIDTH: 140
+    MAP_HEIGHT: 630,
+    MAP_WIDTH: 630,
+    BLOCK_HEIGHT: 210,
+    BLOCK_WIDTH: 210
 }
 

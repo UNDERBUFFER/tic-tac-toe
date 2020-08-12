@@ -1,6 +1,6 @@
 #map {
-    width: 420px;
-    height: 420px;
+    width: 630;
+    height: 630;
     background-color: coral;
     border: 12px ridge wheat;
     margin-left: auto;
@@ -8,9 +8,11 @@
 }
 
 .block {
-    width: 140px;
-    height: 140px;
+    width: 210;
+    height: 210;
     border: 3px solid whitesmoke;
     display: inline-block;
     position: absolute;
+    /* background-image: url('images/tac.png');
+    background-position: center; */
 }
