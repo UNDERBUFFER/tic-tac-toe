@@ -3,6 +3,8 @@
     height: 420px;
     background-color: coral;
     border: 12px ridge wheat;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .block {
