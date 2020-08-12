@@ -1,0 +1,14 @@
+#map {
+    width: 420px;
+    height: 420px;
+    background-color: coral;
+    border: 12px ridge wheat;
+}
+
+.block {
+    width: 140px;
+    height: 140px;
+    border: 3px solid whitesmoke;
+    display: inline-block;
+    position: absolute;
+}
