@@ -6,7 +6,7 @@ class Logic {
         this.map = new Map(settings.MAP_HEIGHT, settings.MAP_WIDTH)
         this.map.makeBlocks(settings.BLOCK_HEIGHT, settings.BLOCK_WIDTH)
         this.winner = null
-        this.computer = new WeakIntelligence(this.map.innerFoundation)
+        this.computer = new MiddleIntelligence(this.map.innerFoundation)
 
         document.addEventListener("STROKE", (event) => {
             if (this.jogging() && this.winner !== null) {
