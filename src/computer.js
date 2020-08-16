@@ -163,9 +163,4 @@ class MiddleIntelligence extends WeakIntelligence {
     }
 }
 
-
-// class HighIntelligence extends MiddleIntelligence {
-//     move() {
-//         return this.giveComplexity()
-//     }
-// }
+// todo HighIntelligence
