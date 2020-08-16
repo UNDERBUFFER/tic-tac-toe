@@ -86,16 +86,21 @@ class MiddleIntelligence extends WeakIntelligence {
             }
         }
 
+        let keys = []
         let key = null
         let value = 0
         for (let name of Object.keys(meaningToGoLikeThis)) {
             if (meaningToGoLikeThis[name] > value) {
-                key = name
-                value = meaningToGoLikeThis[name]
+                keys.push(name)
             }
         }
-        if (key == null)
+        if (keys.length == 0) {
             return super.move()
+        }
+        else {
+            key = keys[this.getRandomInteger(0, keys.length - 1)]
+            value = meaningToGoLikeThis[key]
+        }
 
         console.log(meaningToGoLikeThis, key)
 
@@ -159,7 +164,6 @@ class MiddleIntelligence extends WeakIntelligence {
 }
 
 
-// todo new logic on line 91
 // class HighIntelligence extends MiddleIntelligence {
 //     move() {
 //         return this.giveComplexity()
